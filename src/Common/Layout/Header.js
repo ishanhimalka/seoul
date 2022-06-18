@@ -20,7 +20,7 @@ const drawerWidth = 240;
 const navItems = [{name: 'Home', nav: '/'}, {name: 'About', nav: '/about'}, {
     name: 'Hotel',
     nav: '/hotel'
-}, {name: 'Course', nav: '/course'}, {name: 'Contact', nav: '/contact'}]
+}, {name: 'Courses', nav: '/courses'}, {name: 'Contact', nav: '/contact'}]
 
 const Header = (props) => {
     const navigate = useNavigate();
@@ -118,7 +118,7 @@ const Header = (props) => {
                             }} children={item.name}/>
                         ))}
                     </Box>
-                    {location.pathname === '/course' ? <PrimaryButton onPress={() => {
+                    {location.pathname === '/courses' ? <PrimaryButton onPress={() => {
                         navigate('/enroll')
                     }} children={'Enroll now'}/> : <PrimaryButton onPress={() => {
                         navigate('/booking')

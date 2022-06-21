@@ -142,7 +142,7 @@ const Header = (props) => {
                     {drawer}
                 </Drawer>
             </Box>
-            <Box component="main" sx={{p: 3}}>
+            <Box component="main" sx={{p: 2}}>
                 <Toolbar/>
             </Box>
         </Box>)
